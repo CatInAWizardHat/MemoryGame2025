@@ -28,11 +28,7 @@ struct ContentView: View {
                     Button(action: {
                         showSettings = !showSettings
                     }, label: {
-                        if showSettings {
-                            Image(systemName: "house")
-                        } else {
-                            Image(systemName: "gear")
-                        }
+                        Image(systemName: showSettings ? "house" : "gear")
                     })
                 }
             }
