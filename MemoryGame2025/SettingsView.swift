@@ -9,8 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @Binding var bonus: Bool
-    @Binding var rows: Int
-    @Binding var cols: Int
+    @Binding var rowsCols: Int
     @Binding var tiles: Int
     @Binding var array: [String]
     @Binding var index: Int
@@ -18,21 +17,13 @@ struct SettingsView: View {
         ImagePickerView(array: $array, index: $index)
         VStack{
             HStack{
-                Text(String(rows))
-                Stepper("Rows",
+                Text(String(rowsCols))
+                Stepper("Rows and Columns",
                         value: Binding(get:
-                                        { rows }, set:
+                                        { rowsCols }, set:
                                         { newValue in
-                    rows = newValue
-                    UserDefaults.standard.set(rows, forKey:"Rows")}), in: 2...10)
-            }
-            HStack {
-                Text(String(cols))
-                Stepper("Columns", value: Binding(get:
-                                                    { cols }, set:
-                                                    { newValue in
-                    cols = newValue
-                    UserDefaults.standard.set(cols, forKey:"Cols")}), in: 2...10)
+                    rowsCols = newValue
+                    UserDefaults.standard.set(rowsCols, forKey:"RowsCols")}), in: 2...10)
             }
             HStack{
                 Text(String(tiles))

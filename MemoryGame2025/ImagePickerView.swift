@@ -15,6 +15,7 @@ struct ImagePickerView: View {
             Button(
                 action:{
                     index = (index <= 0) ? 3 : index - 1
+                    UserDefaults.standard.set(index, forKey:"Index")
                 }) {
                     Image(systemName: "arrowtriangle.left")
                         .resizable()
@@ -29,6 +30,7 @@ struct ImagePickerView: View {
             Button(
                 action:{
                     index = (index >= 3) ? 0 : index + 1
+                    UserDefaults.standard.set(index, forKey:"Index")
                 }) {
                     Image(systemName: "arrowtriangle.right")
                         .resizable()
