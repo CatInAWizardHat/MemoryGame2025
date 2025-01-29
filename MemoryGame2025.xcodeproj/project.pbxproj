@@ -27,11 +27,29 @@
 		765C3E272D2F3ECB007D4AC0 /* MemoryGame2025.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGame2025.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765C3E372D2F3ECE007D4AC0 /* MemoryGame2025Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryGame2025Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		765C3E412D2F3ECE007D4AC0 /* MemoryGame2025UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryGame2025UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		769C17792D4988FF004272E7 /* MemoryGame2025.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MemoryGame2025.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		769C177B2D4989E0004272E7 /* Exceptions for "MemoryGame2025" folder in "MemoryGame2025UITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+				GameView.swift,
+				ImagePickerView.swift,
+				MemoryGame2025App.swift,
+				SettingsView.swift,
+			);
+			target = 765C3E402D2F3ECE007D4AC0 /* MemoryGame2025UITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		765C3E292D2F3ECB007D4AC0 /* MemoryGame2025 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				769C177B2D4989E0004272E7 /* Exceptions for "MemoryGame2025" folder in "MemoryGame2025UITests" target */,
+			);
 			path = MemoryGame2025;
 			sourceTree = "<group>";
 		};
@@ -75,6 +93,7 @@
 		765C3E1E2D2F3ECB007D4AC0 = {
 			isa = PBXGroup;
 			children = (
+				769C17792D4988FF004272E7 /* MemoryGame2025.xctestplan */,
 				765C3E292D2F3ECB007D4AC0 /* MemoryGame2025 */,
 				765C3E3A2D2F3ECE007D4AC0 /* MemoryGame2025Tests */,
 				765C3E442D2F3ECE007D4AC0 /* MemoryGame2025UITests */,

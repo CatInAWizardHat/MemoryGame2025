@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "536BA533-65B3-4342-BF79-8A69C79439A0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MemoryGame2025.xcodeproj",
+      "identifier" : "765C3E262D2F3ECB007D4AC0",
+      "name" : "MemoryGame2025"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:MemoryGame2025.xcodeproj",
+        "identifier" : "765C3E362D2F3ECE007D4AC0",
+        "name" : "MemoryGame2025Tests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MemoryGame2025.xcodeproj",
+        "identifier" : "765C3E402D2F3ECE007D4AC0",
+        "name" : "MemoryGame2025UITests"
+      }
+    }
+  ],
+  "version" : 1
+}
