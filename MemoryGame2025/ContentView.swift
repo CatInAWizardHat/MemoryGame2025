@@ -30,6 +30,7 @@ struct ContentView: View {
                     }, label: {
                         Image(systemName: showSettings ? "house" : "gear")
                     })
+                    .accessibilityIdentifier("SettingsButton")
                 }
             }
         }

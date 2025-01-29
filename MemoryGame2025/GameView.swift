@@ -14,6 +14,8 @@ struct GameView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .padding()
+            .accessibilityLabel(name)
+            .accessibilityIdentifier("GameImage")
     }
 }
 

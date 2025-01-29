@@ -18,25 +18,30 @@ struct SettingsView: View {
         VStack{
             HStack{
                 Text(String(rowsCols))
+                    .accessibilityIdentifier("NumberOfRowsAndCols")
                 Stepper("Rows and Columns",
                         value: Binding(get:
                                         { rowsCols }, set:
                                         { newValue in
                     rowsCols = newValue
                     UserDefaults.standard.set(rowsCols, forKey:"RowsCols")}), in: 2...10)
+                .accessibilityIdentifier("RowsColsStepper")
             }
             HStack{
                 Text(String(tiles))
+                    .accessibilityIdentifier("NumberOfTiles")
                 Stepper("Tiles", value: Binding(get:
                                                     { tiles }, set:
                                                     { newValue in
                     tiles = newValue
                     UserDefaults.standard.set(tiles, forKey:"Tiles")}), in: 2...10)
+                .accessibilityIdentifier("TileStepper")
             }
             Toggle("Bonus Tile", isOn: Binding(get: { bonus }, set: { newValue in
                 bonus = newValue
                 UserDefaults.standard.set(bonus, forKey: "BonusTile")
             }))
+            .accessibilityIdentifier("BonusToggle")
         }.padding()
     }
 }

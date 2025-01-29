@@ -20,12 +20,15 @@ struct ImagePickerView: View {
                     Image(systemName: "arrowtriangle.left")
                         .resizable()
                         .frame(width: 75, height: 60)
+                        .accessibilityIdentifier("LeftArrow")
                 }
             Spacer()
             Image(systemName: array[index])
                 .resizable()
                 .frame(width:100, height:100)
                 .aspectRatio(0.75, contentMode: .fit)
+                .accessibilityLabel(array[index])
+                .accessibilityIdentifier("Images")
             Spacer()
             Button(
                 action:{
@@ -35,6 +38,8 @@ struct ImagePickerView: View {
                     Image(systemName: "arrowtriangle.right")
                         .resizable()
                         .frame(width: 75, height: 60)
+                        .accessibilityIdentifier("RightArrow")
+                        
                 }
         }
         .padding()
