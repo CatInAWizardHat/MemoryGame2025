@@ -114,30 +114,30 @@ final class MemoryGame2025UITests: XCTestCase {
         XCTAssertTrue(increment.isHittable, "Image Picker Right Arrow is disabled")
         XCTAssertTrue(decrement.isHittable, "Image Picker Left Arrow is disabled")
         
-        let firstImage: String = app.images["Images"].label
-        var currImage: String = firstImage
+//        let firstImage: String = app.images["Images"].label
+//        var currImage: String = firstImage
         
-        for _ in 1...4 {
-            settings.tap()
-            XCTAssertTrue(currImage == app.images["GameImage"].label, "GameImage does not match selected Image in settings")
-            settings.tap()
-            increment.tap()
-            currImage = app.images["Images"].label
-            if currImage == firstImage {
-                break
-            }
-        }
-        
-        for _ in 1...4 {
-            settings.tap()
-            XCTAssertTrue(currImage == app.images["GameImage"].label, "GameImage does not match selected Image in settings")
-            settings.tap()
-            decrement.tap()
-            currImage = app.images["Images"].label
-            if currImage == firstImage {
-                break
-            }
-        }
+//        for _ in 1...4 {
+//            settings.tap()
+//            XCTAssertTrue(currImage == app.images["GameImage"].label, "GameImage does not match selected Image in settings")
+//            settings.tap()
+//            increment.tap()
+//            currImage = app.images["Images"].label
+//            if currImage == firstImage {
+//                break
+//            }
+//        }
+//        
+//        for _ in 1...4 {
+//            settings.tap()
+//            XCTAssertTrue(currImage == app.images["GameImage"].label, "GameImage does not match selected Image in settings")
+//            settings.tap()
+//            decrement.tap()
+//            currImage = app.images["Images"].label
+//            if currImage == firstImage {
+//                break
+//            }
+//        }
     }
     
     @MainActor

@@ -34,11 +34,13 @@
 		769C177B2D4989E0004272E7 /* Exceptions for "MemoryGame2025" folder in "MemoryGame2025UITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Board.swift,
 				ContentView.swift,
 				GameView.swift,
 				ImagePickerView.swift,
 				MemoryGame2025App.swift,
 				SettingsView.swift,
+				Tile.swift,
 			);
 			target = 765C3E402D2F3ECE007D4AC0 /* MemoryGame2025UITests */;
 		};
@@ -415,6 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryGame2025/Preview Content\"";
+				DEVELOPMENT_TEAM = 45DR88JHVJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -443,6 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryGame2025/Preview Content\"";
+				DEVELOPMENT_TEAM = 45DR88JHVJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
