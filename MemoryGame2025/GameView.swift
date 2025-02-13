@@ -20,10 +20,13 @@ struct GameView: View {
         VStack {
             HStack{
                 Text("Clicks: \(String(clicks))")
+                    .accessibilityIdentifier("Game Clicks")
                 Spacer()
                 Text("Score: \(String(score))")
+                    .accessibilityIdentifier("Game Score")
                 Spacer()
                 Text("Treasures: \(String(unrevealedTreasures))")
+                    .accessibilityIdentifier("Treasures Left")
             }.padding()
             ForEach(board.board, id: \.first!.id) { row in
                 HStack {
