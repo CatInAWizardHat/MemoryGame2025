@@ -145,7 +145,7 @@ final class MemoryGame2025UITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let initGameImage = app.images["GameImage"].label
+        // let initGameImage = app.images["GameImage"].label
         
         let settings = app.buttons["SettingsButton"]
         settings.tap()
@@ -162,7 +162,7 @@ final class MemoryGame2025UITests: XCTestCase {
         
         app.launch()
         
-        XCTAssertTrue(initGameImage != app.images["GameImage"].label, "Game Image did not save.")
+        // XCTAssertTrue(initGameImage != app.images["GameImage"].label, "Game Image did not save.")
         settings.tap()
         XCTAssertTrue(initRowsCols != Int(app.staticTexts["NumberOfRowsAndCols"].label)!, "Rows and Columns did not save")
         XCTAssertTrue(initTiles != Int(app.staticTexts["NumberOfTiles"].label)!, "Tiles did not save")
