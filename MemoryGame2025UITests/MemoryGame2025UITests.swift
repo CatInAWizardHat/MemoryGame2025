@@ -168,6 +168,17 @@ final class MemoryGame2025UITests: XCTestCase {
         XCTAssertTrue(initTiles != Int(app.staticTexts["NumberOfTiles"].label)!, "Tiles did not save")
         XCTAssertTrue(initImagePicked != app.images["Images"].label, "Image picker list did not save")
     }
+    
+    @MainActor
+    func testGameView() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        XCTAssertTrue(app.staticTexts["Game Clicks"].exists, "Clicks Text Does Not Exist")
+        XCTAssertTrue(app.staticTexts["Game Score"].exists, "Score Text Does Not Exist")
+        XCTAssertTrue(app.staticTexts["Treasures Left"].exists, "Remaining Treasures Text Does Not Exist")
+    }
+    
 //    @MainActor
 //    func testExample() throws {
 //        // UI tests must launch the application that they test.
