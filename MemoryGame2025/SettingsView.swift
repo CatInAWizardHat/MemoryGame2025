@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+/// Encapsulates the settings pertaining to the memory game.
+/// Allows for setting the n x n size of the board,
+/// the icon designating the scoring tiles,
+/// the number of treasures that will populate the board
+/// and whether the bonus tile is enabled. ]
 struct SettingsView: View {
     @Binding var bonus: Bool
     @Binding var rowsCols: Int

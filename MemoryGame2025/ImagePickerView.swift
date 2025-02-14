@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Allows the user to set which icon will represent the scoring tiles for the memory game.
 struct ImagePickerView: View {
     @Binding var array: [String]
     @Binding var index: Int

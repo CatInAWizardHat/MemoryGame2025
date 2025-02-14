@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+/// The highest level view for the memory game app.
+/// Encapsulates the SettingsView and GameView, alternating between
+/// which is displayed when the user taps the SettingsButton button.
 struct ContentView: View {
     @State var array = ["circle.dashed",
                         "square.dashed",

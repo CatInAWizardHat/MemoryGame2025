@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// The view encapsulating the memory game itself.
 struct GameView: View {
     @Binding var name: String
     @Binding var rowsCols: Int
