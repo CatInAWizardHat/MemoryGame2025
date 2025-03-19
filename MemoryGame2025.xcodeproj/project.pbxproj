@@ -87,6 +87,40 @@
 			);
 			target = 765C3E402D2F3ECE007D4AC0 /* MemoryGame2025UITests */;
 		};
+		76C07C102D8B669300D318E5 /* Exceptions for "MemoryGame2025" folder in "MemoryGameWatch2025 Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Board.swift,
+				ContentView.swift,
+				GameView.swift,
+				ImagePickerView.swift,
+				MemoryGame2025App.swift,
+				SettingsView.swift,
+				Tile.swift,
+			);
+			target = 76C07B8F2D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */;
+		};
+		76C07C112D8B669300D318E5 /* Exceptions for "MemoryGame2025" folder in "MemoryGameWatch2025 Watch AppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Board.swift,
+				ContentView.swift,
+				GameView.swift,
+				ImagePickerView.swift,
+				MemoryGame2025App.swift,
+				SettingsView.swift,
+				Tile.swift,
+			);
+			target = 76C07BAB2D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppUITests */;
+		};
+		76C07C1E2D8B671F00D318E5 /* Exceptions for "MemoryGameWatch2025 Watch App" folder in "MemoryGameWatch2025 Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+				MemoryGameWatch2025App.swift,
+			);
+			target = 76C07B8F2D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -94,6 +128,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				769C177B2D4989E0004272E7 /* Exceptions for "MemoryGame2025" folder in "MemoryGame2025UITests" target */,
+				76C07C102D8B669300D318E5 /* Exceptions for "MemoryGame2025" folder in "MemoryGameWatch2025 Watch App" target */,
+				76C07C112D8B669300D318E5 /* Exceptions for "MemoryGame2025" folder in "MemoryGameWatch2025 Watch AppUITests" target */,
 			);
 			path = MemoryGame2025;
 			sourceTree = "<group>";
@@ -110,6 +146,9 @@
 		};
 		76C07B942D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				76C07C1E2D8B671F00D318E5 /* Exceptions for "MemoryGameWatch2025 Watch App" folder in "MemoryGameWatch2025 Watch App" target */,
+			);
 			path = "MemoryGameWatch2025 Watch App";
 			sourceTree = "<group>";
 		};

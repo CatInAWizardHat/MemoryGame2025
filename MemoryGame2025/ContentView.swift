@@ -30,13 +30,18 @@ struct ContentView: View {
                 }
             }
             .toolbar {
-                ToolbarItemGroup {
+                ToolbarItemGroup (placement: .topBarTrailing) {
+                    // ToolbarItem (placement: .cancellationAction) {
                     Button(action: {
                         showSettings = !showSettings
                     }, label: {
                         Image(systemName: showSettings ? "house" : "gear")
                     })
                     .accessibilityIdentifier("SettingsButton")
+                    #if os(watchOS)
+                    .scaledToFit()
+                    #endif
+                    // }
                 }
             }
         }

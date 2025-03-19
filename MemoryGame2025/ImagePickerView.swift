@@ -18,31 +18,55 @@ struct ImagePickerView: View {
                     index = (index <= 0) ? 3 : index - 1
                     UserDefaults.standard.set(index, forKey:"Index")
                 }) {
+                    #if os(watchOS)
+                    Image(systemName: "arrowtriangle.left")
+                        .resizable()
+                        .scaledToFit()
+                        .accessibilityIdentifier("LeftArrow")
+                    #else
                     Image(systemName: "arrowtriangle.left")
                         .resizable()
                         .frame(width: 75, height: 60)
                         .accessibilityIdentifier("LeftArrow")
+                    #endif
                 }
             Spacer()
+            #if os(watchOS)
+            Image(systemName: array[index])
+                .resizable()
+                .scaledToFit()
+                .aspectRatio(0.75, contentMode: .fit)
+                .accessibilityLabel(array[index])
+                .accessibilityIdentifier("Images")
+            #else
             Image(systemName: array[index])
                 .resizable()
                 .frame(width:100, height:100)
                 .aspectRatio(0.75, contentMode: .fit)
                 .accessibilityLabel(array[index])
                 .accessibilityIdentifier("Images")
+            #endif
             Spacer()
             Button(
                 action:{
                     index = (index >= 3) ? 0 : index + 1
                     UserDefaults.standard.set(index, forKey:"Index")
                 }) {
+                    #if os(watchOS)
+                    Image(systemName: "arrowtriangle.right")
+                        .resizable()
+                        .scaledToFit()
+                        .accessibilityIdentifier("RightArrow")
+                    #else
                     Image(systemName: "arrowtriangle.right")
                         .resizable()
                         .frame(width: 75, height: 60)
                         .accessibilityIdentifier("RightArrow")
+                    #endif
                         
                 }
         }
         .padding()
+        .scaledToFit()
     }
 }

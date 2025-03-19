@@ -33,11 +33,17 @@ class Board {
     func pickTreasures(numTreasures: Int, name: String) {
         var row: Int
         var col: Int
-        for _ in 1...numTreasures {
+        var treasuresToPick: Int = 0
+        while treasuresToPick != numTreasures {
             row = Int.random(in: 0..<self.size)
             col = Int.random(in: 0..<self.size)
-            board[row][col].contents = name
-            board[row][col].isScoring = true
+            if(board[row][col].isScoring) {
+                continue
+            } else {
+                board[row][col].contents = name
+                board[row][col].isScoring = true
+                treasuresToPick += 1
+            }
         }
     }
     
