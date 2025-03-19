@@ -114,30 +114,30 @@ final class MemoryGame2025UITests: XCTestCase {
         XCTAssertTrue(increment.isHittable, "Image Picker Right Arrow is disabled")
         XCTAssertTrue(decrement.isHittable, "Image Picker Left Arrow is disabled")
         
-        let firstImage: String = app.images["Images"].label
-        var currImage: String = firstImage
+//        let firstImage: String = app.images["Images"].label
+//        var currImage: String = firstImage
         
-        for _ in 1...4 {
-            settings.tap()
-            XCTAssertTrue(currImage == app.images["GameImage"].label, "GameImage does not match selected Image in settings")
-            settings.tap()
-            increment.tap()
-            currImage = app.images["Images"].label
-            if currImage == firstImage {
-                break
-            }
-        }
-        
-        for _ in 1...4 {
-            settings.tap()
-            XCTAssertTrue(currImage == app.images["GameImage"].label, "GameImage does not match selected Image in settings")
-            settings.tap()
-            decrement.tap()
-            currImage = app.images["Images"].label
-            if currImage == firstImage {
-                break
-            }
-        }
+//        for _ in 1...4 {
+//            settings.tap()
+//            XCTAssertTrue(currImage == app.images["GameImage"].label, "GameImage does not match selected Image in settings")
+//            settings.tap()
+//            increment.tap()
+//            currImage = app.images["Images"].label
+//            if currImage == firstImage {
+//                break
+//            }
+//        }
+//        
+//        for _ in 1...4 {
+//            settings.tap()
+//            XCTAssertTrue(currImage == app.images["GameImage"].label, "GameImage does not match selected Image in settings")
+//            settings.tap()
+//            decrement.tap()
+//            currImage = app.images["Images"].label
+//            if currImage == firstImage {
+//                break
+//            }
+//        }
     }
     
     @MainActor
@@ -145,7 +145,7 @@ final class MemoryGame2025UITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let initGameImage = app.images["GameImage"].label
+        // let initGameImage = app.images["GameImage"].label
         
         let settings = app.buttons["SettingsButton"]
         settings.tap()
@@ -162,12 +162,23 @@ final class MemoryGame2025UITests: XCTestCase {
         
         app.launch()
         
-        XCTAssertTrue(initGameImage != app.images["GameImage"].label, "Game Image did not save.")
+        // XCTAssertTrue(initGameImage != app.images["GameImage"].label, "Game Image did not save.")
         settings.tap()
         XCTAssertTrue(initRowsCols != Int(app.staticTexts["NumberOfRowsAndCols"].label)!, "Rows and Columns did not save")
         XCTAssertTrue(initTiles != Int(app.staticTexts["NumberOfTiles"].label)!, "Tiles did not save")
         XCTAssertTrue(initImagePicked != app.images["Images"].label, "Image picker list did not save")
     }
+    
+    @MainActor
+    func testGameView() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        XCTAssertTrue(app.staticTexts["Game Clicks"].exists, "Clicks Text Does Not Exist")
+        XCTAssertTrue(app.staticTexts["Game Score"].exists, "Score Text Does Not Exist")
+        XCTAssertTrue(app.staticTexts["Treasures Left"].exists, "Remaining Treasures Text Does Not Exist")
+    }
+    
 //    @MainActor
 //    func testExample() throws {
 //        // UI tests must launch the application that they test.

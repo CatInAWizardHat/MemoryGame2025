@@ -7,8 +7,14 @@
 
 import SwiftUI
 
+/// The highest level view for the memory game app.
+/// Encapsulates the SettingsView and GameView, alternating between
+/// which is displayed when the user taps the SettingsButton button.
 struct ContentView: View {
-    @State var array = ["square.and.arrow.up", "square.and.arrow.up.fill", "square.and.arrow.up.circle", "square.and.arrow.up.circle.fill"]
+    @State var array = ["circle.dashed",
+                        "square.dashed",
+                        "app.dashed",
+                        "shield"]
     @State var index = UserDefaults.standard.value(forKey:"Index") as? Int ?? 0
     @State private var bonus = UserDefaults.standard.value(forKey:"BonusTile") as? Bool ?? false
     @State private var rowsCols = UserDefaults.standard.value(forKey:"RowsCols") as? Int ?? 2
@@ -20,17 +26,22 @@ struct ContentView: View {
                 if showSettings {
                     SettingsView(bonus: $bonus, rowsCols: $rowsCols, tiles: $tiles, array: $array, index: $index)
                 } else {
-                    GameView(name: $array[index])
+                    GameView(name: $array[index], rowsCols: $rowsCols, numTreasures: $tiles)
                 }
             }
             .toolbar {
-                ToolbarItemGroup {
+                ToolbarItemGroup (placement: .topBarTrailing) {
+                    // ToolbarItem (placement: .cancellationAction) {
                     Button(action: {
                         showSettings = !showSettings
                     }, label: {
                         Image(systemName: showSettings ? "house" : "gear")
                     })
                     .accessibilityIdentifier("SettingsButton")
+                    #if os(watchOS)
+                    .scaledToFit()
+                    #endif
+                    // }
                 }
             }
         }

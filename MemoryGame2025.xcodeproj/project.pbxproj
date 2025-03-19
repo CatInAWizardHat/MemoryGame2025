@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		76C07B912D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 76C07B902D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		765C3E382D2F3ECE007D4AC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,26 +25,101 @@
 			remoteGlobalIDString = 765C3E262D2F3ECB007D4AC0;
 			remoteInfo = MemoryGame2025;
 		};
+		76C07B922D8B62DA00D318E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 765C3E1F2D2F3ECB007D4AC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76C07B8F2D8B62DA00D318E5;
+			remoteInfo = "MemoryGameWatch2025 Watch App";
+		};
+		76C07BA32D8B62DD00D318E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 765C3E1F2D2F3ECB007D4AC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76C07B8F2D8B62DA00D318E5;
+			remoteInfo = "MemoryGameWatch2025 Watch App";
+		};
+		76C07BAD2D8B62DD00D318E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 765C3E1F2D2F3ECB007D4AC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76C07B8F2D8B62DA00D318E5;
+			remoteInfo = "MemoryGameWatch2025 Watch App";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76C07BB62D8B62DD00D318E5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				76C07B912D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		765C3E272D2F3ECB007D4AC0 /* MemoryGame2025.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGame2025.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765C3E372D2F3ECE007D4AC0 /* MemoryGame2025Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryGame2025Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		765C3E412D2F3ECE007D4AC0 /* MemoryGame2025UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryGame2025UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		769C17792D4988FF004272E7 /* MemoryGame2025.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MemoryGame2025.xctestplan; sourceTree = "<group>"; };
+		76C07B8B2D8B62D900D318E5 /* MemoryGameWatch2025.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGameWatch2025.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C07B902D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MemoryGameWatch2025 Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C07BA22D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MemoryGameWatch2025 Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C07BAC2D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MemoryGameWatch2025 Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		769C177B2D4989E0004272E7 /* Exceptions for "MemoryGame2025" folder in "MemoryGame2025UITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Board.swift,
 				ContentView.swift,
 				GameView.swift,
 				ImagePickerView.swift,
 				MemoryGame2025App.swift,
 				SettingsView.swift,
+				Tile.swift,
 			);
 			target = 765C3E402D2F3ECE007D4AC0 /* MemoryGame2025UITests */;
+		};
+		76C07C102D8B669300D318E5 /* Exceptions for "MemoryGame2025" folder in "MemoryGameWatch2025 Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Board.swift,
+				ContentView.swift,
+				GameView.swift,
+				ImagePickerView.swift,
+				MemoryGame2025App.swift,
+				SettingsView.swift,
+				Tile.swift,
+			);
+			target = 76C07B8F2D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */;
+		};
+		76C07C112D8B669300D318E5 /* Exceptions for "MemoryGame2025" folder in "MemoryGameWatch2025 Watch AppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Board.swift,
+				ContentView.swift,
+				GameView.swift,
+				ImagePickerView.swift,
+				MemoryGame2025App.swift,
+				SettingsView.swift,
+				Tile.swift,
+			);
+			target = 76C07BAB2D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppUITests */;
+		};
+		76C07C1E2D8B671F00D318E5 /* Exceptions for "MemoryGameWatch2025 Watch App" folder in "MemoryGameWatch2025 Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+				MemoryGameWatch2025App.swift,
+			);
+			target = 76C07B8F2D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -49,6 +128,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				769C177B2D4989E0004272E7 /* Exceptions for "MemoryGame2025" folder in "MemoryGame2025UITests" target */,
+				76C07C102D8B669300D318E5 /* Exceptions for "MemoryGame2025" folder in "MemoryGameWatch2025 Watch App" target */,
+				76C07C112D8B669300D318E5 /* Exceptions for "MemoryGame2025" folder in "MemoryGameWatch2025 Watch AppUITests" target */,
 			);
 			path = MemoryGame2025;
 			sourceTree = "<group>";
@@ -61,6 +142,24 @@
 		765C3E442D2F3ECE007D4AC0 /* MemoryGame2025UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MemoryGame2025UITests;
+			sourceTree = "<group>";
+		};
+		76C07B942D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				76C07C1E2D8B671F00D318E5 /* Exceptions for "MemoryGameWatch2025 Watch App" folder in "MemoryGameWatch2025 Watch App" target */,
+			);
+			path = "MemoryGameWatch2025 Watch App";
+			sourceTree = "<group>";
+		};
+		76C07BA52D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "MemoryGameWatch2025 Watch AppTests";
+			sourceTree = "<group>";
+		};
+		76C07BAF2D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "MemoryGameWatch2025 Watch AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -87,6 +186,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76C07B8D2D8B62DA00D318E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C07B9F2D8B62DD00D318E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C07BA92D8B62DD00D318E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,6 +217,9 @@
 				765C3E292D2F3ECB007D4AC0 /* MemoryGame2025 */,
 				765C3E3A2D2F3ECE007D4AC0 /* MemoryGame2025Tests */,
 				765C3E442D2F3ECE007D4AC0 /* MemoryGame2025UITests */,
+				76C07B942D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */,
+				76C07BA52D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppTests */,
+				76C07BAF2D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppUITests */,
 				765C3E282D2F3ECB007D4AC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +230,10 @@
 				765C3E272D2F3ECB007D4AC0 /* MemoryGame2025.app */,
 				765C3E372D2F3ECE007D4AC0 /* MemoryGame2025Tests.xctest */,
 				765C3E412D2F3ECE007D4AC0 /* MemoryGame2025UITests.xctest */,
+				76C07B8B2D8B62D900D318E5 /* MemoryGameWatch2025.app */,
+				76C07B902D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App.app */,
+				76C07BA22D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppTests.xctest */,
+				76C07BAC2D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +309,93 @@
 			productReference = 765C3E412D2F3ECE007D4AC0 /* MemoryGame2025UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		76C07B8A2D8B62D900D318E5 /* MemoryGameWatch2025 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76C07BBE2D8B62DD00D318E5 /* Build configuration list for PBXNativeTarget "MemoryGameWatch2025" */;
+			buildPhases = (
+				76C07B892D8B62D900D318E5 /* Resources */,
+				76C07BB62D8B62DD00D318E5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76C07B932D8B62DA00D318E5 /* PBXTargetDependency */,
+			);
+			name = MemoryGameWatch2025;
+			packageProductDependencies = (
+			);
+			productName = MemoryGameWatch2025;
+			productReference = 76C07B8B2D8B62D900D318E5 /* MemoryGameWatch2025.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		76C07B8F2D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76C07BBD2D8B62DD00D318E5 /* Build configuration list for PBXNativeTarget "MemoryGameWatch2025 Watch App" */;
+			buildPhases = (
+				76C07B8C2D8B62DA00D318E5 /* Sources */,
+				76C07B8D2D8B62DA00D318E5 /* Frameworks */,
+				76C07B8E2D8B62DA00D318E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				76C07B942D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */,
+			);
+			name = "MemoryGameWatch2025 Watch App";
+			packageProductDependencies = (
+			);
+			productName = "MemoryGameWatch2025 Watch App";
+			productReference = 76C07B902D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76C07BA12D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76C07BBF2D8B62DD00D318E5 /* Build configuration list for PBXNativeTarget "MemoryGameWatch2025 Watch AppTests" */;
+			buildPhases = (
+				76C07B9E2D8B62DD00D318E5 /* Sources */,
+				76C07B9F2D8B62DD00D318E5 /* Frameworks */,
+				76C07BA02D8B62DD00D318E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76C07BA42D8B62DD00D318E5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				76C07BA52D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppTests */,
+			);
+			name = "MemoryGameWatch2025 Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "MemoryGameWatch2025 Watch AppTests";
+			productReference = 76C07BA22D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76C07BAB2D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76C07BC02D8B62DD00D318E5 /* Build configuration list for PBXNativeTarget "MemoryGameWatch2025 Watch AppUITests" */;
+			buildPhases = (
+				76C07BA82D8B62DD00D318E5 /* Sources */,
+				76C07BA92D8B62DD00D318E5 /* Frameworks */,
+				76C07BAA2D8B62DD00D318E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76C07BAE2D8B62DD00D318E5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				76C07BAF2D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppUITests */,
+			);
+			name = "MemoryGameWatch2025 Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "MemoryGameWatch2025 Watch AppUITests";
+			productReference = 76C07BAC2D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +417,20 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 765C3E262D2F3ECB007D4AC0;
 					};
+					76C07B8A2D8B62D900D318E5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					76C07B8F2D8B62DA00D318E5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					76C07BA12D8B62DD00D318E5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 76C07B8F2D8B62DA00D318E5;
+					};
+					76C07BAB2D8B62DD00D318E5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 76C07B8F2D8B62DA00D318E5;
+					};
 				};
 			};
 			buildConfigurationList = 765C3E222D2F3ECB007D4AC0 /* Build configuration list for PBXProject "MemoryGame2025" */;
@@ -222,6 +450,10 @@
 				765C3E262D2F3ECB007D4AC0 /* MemoryGame2025 */,
 				765C3E362D2F3ECE007D4AC0 /* MemoryGame2025Tests */,
 				765C3E402D2F3ECE007D4AC0 /* MemoryGame2025UITests */,
+				76C07B8A2D8B62D900D318E5 /* MemoryGameWatch2025 */,
+				76C07B8F2D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */,
+				76C07BA12D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppTests */,
+				76C07BAB2D8B62DD00D318E5 /* MemoryGameWatch2025 Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +474,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		765C3E3F2D2F3ECE007D4AC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C07B892D8B62D900D318E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C07B8E2D8B62DA00D318E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C07BA02D8B62DD00D318E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C07BAA2D8B62DD00D318E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,6 +532,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76C07B8C2D8B62DA00D318E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C07B9E2D8B62DD00D318E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C07BA82D8B62DD00D318E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -284,6 +565,21 @@
 			isa = PBXTargetDependency;
 			target = 765C3E262D2F3ECB007D4AC0 /* MemoryGame2025 */;
 			targetProxy = 765C3E422D2F3ECE007D4AC0 /* PBXContainerItemProxy */;
+		};
+		76C07B932D8B62DA00D318E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76C07B8F2D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */;
+			targetProxy = 76C07B922D8B62DA00D318E5 /* PBXContainerItemProxy */;
+		};
+		76C07BA42D8B62DD00D318E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76C07B8F2D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */;
+			targetProxy = 76C07BA32D8B62DD00D318E5 /* PBXContainerItemProxy */;
+		};
+		76C07BAE2D8B62DD00D318E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76C07B8F2D8B62DA00D318E5 /* MemoryGameWatch2025 Watch App */;
+			targetProxy = 76C07BAD2D8B62DD00D318E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +711,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryGame2025/Preview Content\"";
+				DEVELOPMENT_TEAM = 45DR88JHVJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -443,6 +740,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryGame2025/Preview Content\"";
+				DEVELOPMENT_TEAM = 45DR88JHVJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -531,6 +829,164 @@
 			};
 			name = Release;
 		};
+		76C07BB42D8B62DD00D318E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = MemoryGameWatch2025;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.camosun.ics.C0515260.MemoryGameWatch2025;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		76C07BB52D8B62DD00D318E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = MemoryGameWatch2025;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.camosun.ics.C0515260.MemoryGameWatch2025;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		76C07BB72D8B62DD00D318E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MemoryGameWatch2025 Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MemoryGameWatch2025;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.camosun.ics.C0515260.MemoryGameWatch2025.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		76C07BB82D8B62DD00D318E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MemoryGameWatch2025 Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MemoryGameWatch2025;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.camosun.ics.C0515260.MemoryGameWatch2025.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		76C07BB92D8B62DD00D318E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.camosun.ics.C0515260.MemoryGameWatch2025-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemoryGameWatch2025 Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MemoryGameWatch2025 Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		76C07BBA2D8B62DD00D318E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.camosun.ics.C0515260.MemoryGameWatch2025-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemoryGameWatch2025 Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MemoryGameWatch2025 Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		76C07BBB2D8B62DD00D318E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.camosun.ics.C0515260.MemoryGameWatch2025-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "MemoryGameWatch2025 Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		76C07BBC2D8B62DD00D318E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.camosun.ics.C0515260.MemoryGameWatch2025-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "MemoryGameWatch2025 Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -566,6 +1022,42 @@
 			buildConfigurations = (
 				765C3E522D2F3ECE007D4AC0 /* Debug */,
 				765C3E532D2F3ECE007D4AC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76C07BBD2D8B62DD00D318E5 /* Build configuration list for PBXNativeTarget "MemoryGameWatch2025 Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C07BB72D8B62DD00D318E5 /* Debug */,
+				76C07BB82D8B62DD00D318E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76C07BBE2D8B62DD00D318E5 /* Build configuration list for PBXNativeTarget "MemoryGameWatch2025" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C07BB42D8B62DD00D318E5 /* Debug */,
+				76C07BB52D8B62DD00D318E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76C07BBF2D8B62DD00D318E5 /* Build configuration list for PBXNativeTarget "MemoryGameWatch2025 Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C07BB92D8B62DD00D318E5 /* Debug */,
+				76C07BBA2D8B62DD00D318E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76C07BC02D8B62DD00D318E5 /* Build configuration list for PBXNativeTarget "MemoryGameWatch2025 Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C07BBB2D8B62DD00D318E5 /* Debug */,
+				76C07BBC2D8B62DD00D318E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
